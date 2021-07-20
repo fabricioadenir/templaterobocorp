@@ -1,0 +1,43 @@
+{
+    "tasks": {
+        "Primeira Task": {
+            "alias": "primeira",
+            "start": true,
+            "next": [
+                "segunda",
+                "end"
+            ],
+            "actions": [
+                {
+                    "status": "PASS",
+                    "task": "segunda"
+                },
+                {
+                    "status": "FAIL",
+                    "task": "end"
+                }
+            ]
+        },
+        "Segunda Task": {
+            "alias": "segunda",
+            "next": [
+                "end"
+            ],
+            "actions": [
+                {
+                    "status": "PASS",
+                    "task": "end"
+                },
+                {
+                    "status": "FAIL",
+                    "task": "end"
+                }
+            ]
+        },
+        "End Task": {
+            "alias": "end",
+            "end": true,
+            "next": []
+        }
+    }
+}
