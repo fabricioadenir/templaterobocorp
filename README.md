@@ -6,6 +6,8 @@ Ele é baseado no templete criado pelo Robocorp com o comando:
 rcc create <name>
 ```
 
+## Antes de tudo precisamos instalar o rcc:
+Basta acessar o link e seguir as instruções: [RCC](https://github.com/robocorp/rcc#installing-rcc-from-command-line)
 ## Dicas de como ele foi construido.
 - Na pasta `devdata` temos o arquivo `env.json` que podem reunir variáveis de ambiente para e execução do robô.
 - `keywords` temos um arquivo `keywords.robot` que reune algumas keywords, podendo ser criados outros arquivos nestá pasta afim de deixar o projeto bem estruturado e organizado.
